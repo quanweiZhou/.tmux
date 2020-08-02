@@ -20,7 +20,7 @@ existing `~/.tmux.conf` first)
 
 ```
 $ cd
-$ git clone https://github.com/gpakosz/.tmux.git
+$ git clone https://github.com/quanweiZhou/.tmux.git
 $ ln -s -f .tmux/.tmux.conf
 $ cp .tmux/.tmux.conf.local .
 ```
@@ -90,7 +90,8 @@ Troubleshooting
 Features
 --------
 
- - `C-a` acts as secondary prefix, while keeping default `C-b` prefix
+ - ~~`C-a` acts as secondary prefix, while keeping default `C-b` prefix~~
+    - `C-j` act as prefix, and delete default `c-j` prefix
  - visual theme inspired by [Powerline][]
  - [maximize any pane to a new window with `<prefix> +`][maximize-pane]
  - SSH/Mosh aware username and hostname status line information
@@ -132,9 +133,10 @@ Bindings
 --------
 
 tmux may be controlled from an attached client by using a key combination of a
-prefix key, followed by a command key. This configuration uses `C-a` as a
-secondary prefix while keeping `C-b` as the default prefix. In the following
+prefix key, followed by a command key. ~~This configuration uses `C-a` as a
+secondary prefix while keeping `C-b` as the default prefix.~~This configuration uses `C-j` as prefix and deleted `C-b`. In the following
 list of key bindings:
+
   - `<prefix>` means you have to either hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd>
   - `<prefix> c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>c</kbd>
   - `<prefix> C-c` means you have to hit <kbd>Ctrl</kbd> + <kbd>a</kbd> or <kbd>Ctrl</kbd> + <kbd>b</kbd> followed by <kbd>Ctrl</kbd> + <kbd>c</kbd>
